@@ -18,6 +18,7 @@
 
 - [Introduction](#introduction)
 - [Technologies](#technologies)
+- [Layout](#layout)
 - [References 📌](#references)
 - [Usage](#usage)
 - [Skills 📄](#skills)
@@ -31,8 +32,24 @@ Implement a website where users can play Pong with each other. There are a user 
 
 - NestJS
 - TypeScript
+- React
 - PostgreSQL
 - Docker
+
+## Layout
+
+<h1 align="center">
+	<img alt="perfil do jogo" src="./img/1.JPG" />
+  <img alt="segurança" src="./img/2.JPG" />
+  <img alt="bloqueados" src="./img/3.JPG" />
+  <img alt="historico de partidas" src="./img/4.JPG" />
+  <img alt="Lounge do game" src="./img/5.JPG" />
+  <img alt="Jogo pong" src="./img/6.JPG" />
+  <img alt="Amigos" src="./img/7.JPG" />
+  <img alt="Canais" src="./img/8.JPG" />
+  <img alt="Chat" src="./img/9.JPG" />
+  <img alt="Gerenciamento de canais" src="./img/10.JPG" />
+ </h1>
 
 ## Usage
 
@@ -40,8 +57,11 @@ Implement a website where users can play Pong with each other. There are a user 
 # Clone the project and acess the folder
 git clone https://github.com/nandajfa/ft_transcendence && cd ft_transcendence
 
-# Run make to compile the program
+# Run make to build containers
 make
+
+# Access pages
+http://localhost:3000/
 
 # Clean the program
 make fclean

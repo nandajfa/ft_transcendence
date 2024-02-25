@@ -7,10 +7,6 @@ all: build
 
 build:
 	@echo "$(GREEN)** Building containers **$(RESET)"
-	@docker-compose --file=$(COMPOSE) up --build
-
-build-detach:
-	@echo "$(GREEN)** Building containers detach **$(RESET)"
 	@docker-compose --file=$(COMPOSE) up --build -d
 
 down:
@@ -28,3 +24,7 @@ stop:
 list:
 	@echo "$(GREEN)** List containers **$(RESET)"
 	@docker-compose -f $(COMPOSE) ps
+
+fclean:
+		@echo "$(GREEN) ** Remove all containers ** $(RESET)"
+		@docker stop $(docker ps -qa); docker rm $(docker ps -qa); docker rmi -f $(docker images -qa); docker volume rm $(docker volume ls -q); docker network rm $(docker network ls -q) 2>/dev/null
